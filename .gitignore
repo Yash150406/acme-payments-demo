@@ -1,0 +1,9 @@
+.terraform/
+*.tfstate
+*.tfstate.backup
+.env
+__pycache__/
+*.pyc
+checkov_output.json
+socket_deps_output.json
+nmap_output.xml

@@ -1,0 +1,12 @@
+version: "3"
+services:
+  db:
+    image: postgres:latest                   # unpinned
+    environment:
+      POSTGRES_PASSWORD: "password123"       # hardcoded_secret
+    ports:
+      - "5432:5432"                          # exposes postgres
+  redis:
+    image: redis:latest                      # unpinned
+    ports:
+      - "6379:6379"                          # exposes redis
